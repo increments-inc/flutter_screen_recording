@@ -26,9 +26,9 @@ import android.graphics.Point
 
 
 class FlutterScreenRecordingPlugin(
-        private val registrar: Registrar
+    private val registrar: Registrar
 ) : MethodCallHandler,
-        PluginRegistry.ActivityResultListener {
+    PluginRegistry.ActivityResultListener {
 
     var mScreenDensity: Int = 0
     var mMediaRecorder: MediaRecorder? = null
@@ -208,7 +208,7 @@ class FlutterScreenRecordingPlugin(
         println("aaa" + mDisplayWidth.toString() + " " + mDisplayHeight);
 
         return mMediaProjection?.createVirtualDisplay("MainActivity", mDisplayWidth, mDisplayHeight, mScreenDensity,
-                DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, mMediaRecorder?.getSurface(), null, null)
+            DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, mMediaRecorder?.getSurface(), null, null)
     }
 
     private fun stopScreenSharing() {
