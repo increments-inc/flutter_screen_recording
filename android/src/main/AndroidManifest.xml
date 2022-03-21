@@ -5,9 +5,5 @@
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    
 
-    <uses-sdk
-        android:minSdkVersion="23"
-        tools:overrideLibrary="changjoopark.com.flutter_foreground_plugin"/>
 </manifest>
